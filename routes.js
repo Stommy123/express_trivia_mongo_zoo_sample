@@ -46,9 +46,7 @@ router.post("/", (req, res, next) => {
 });
 
 //GET /questions/:id
-router.get("/:qID", (req, res) => {
-    res.json(req.question)
-});
+router.get("/:qID", (req, res) => res.json(req.question))
 
 //POST /questions/:qID/answer
 router.post("/:qID/answers", (req, res, next) => {
